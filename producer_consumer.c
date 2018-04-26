@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<pthread.h>
 #include<unistd.h>
-#include<semaphore.h> /* sem_t */
+#include<semaphore.h>
 #include<stdlib.h>
 
 #define BUF_SIZE 2
@@ -18,6 +18,7 @@ int value, i;
 
 void *producer(void *data);
 void *consumer(void *data);
+void *display(void *data);
 
 int main(void)
 {
@@ -70,8 +71,6 @@ int main(void)
 				printf("Buffer empty\n");
 				break;
 			}
-			sleep(1);
-			printf("Consume data is %d\n", cons_data);
 			break;
 		case 3:
 				if (i == 0) {
@@ -115,18 +114,26 @@ void *producer(void *arg)
 
 void *consumer(void *arg)
 {
-
 	if (sem_wait(&fill)) { /* wait */
 		printf("Error: sem wait fail\n");
 		pthread_exit(NULL);
 	}
 
 	i--;
-	*(int *) arg = buf[i].data;
+	int data;	
+	data  = buf[i].data;
 	
 	if (sem_post(&empty)) { /* post */
 		printf("Error: sem wait fail\n");
 		pthread_exit(NULL);
 	}
+	pthread_t dis;
+	pthread_create(&dis, NULL, display, &data);
+	pthread_join(dis, NULL);
+	pthread_exit(NULL);
+}
+void *display(void *data)
+{
+	printf("Consume data: %d\n", *(int *) data);
 	pthread_exit(NULL);
 }
