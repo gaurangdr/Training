@@ -1,26 +1,23 @@
 #include<stdio.h>
+#include<semaphore.h>
 int main(void)
 {
 	int sel;
-	printf("Enter selection:\n");
+	printf("Enter sel:");
 	scanf("%d", &sel);
 	switch (sel) {
 	case 1:
-		printf("Selection %d\n", sel);
+		printf("Case 1\n");
+		int i = 10;
+		printf("i = %d\n", i);
 		break;
-	case 2: goto Label;
-		int b;
-		b = sel + 10;
-		printf("B is %d\n", sel);
-		break;
-	case 3:
-		printf("Selection %d\n", sel);
+	case 2:
+		printf("Case 2\n");
 		break;
 	default:
-		printf("Default\n");
+		printf("Good day\n");
+		break;
 	}
-Label: ;int c;
-	c = sel + 2;
-	printf("Lable\n");
 	return 0;
 }
+	

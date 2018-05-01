@@ -4,7 +4,7 @@ int main(void)
 	int a = 10;
 	printf("a = %d\n", a);
 	{
-//		int a;
+		int a;
 		a = 12;
 		printf("a = %d\n", a);
 	}
