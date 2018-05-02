@@ -2,7 +2,7 @@
 #include<pthread.h>
 #include<sys/types.h>
 #include<unistd.h>
-#include<semaphore.h> /* sem_t */
+#include<semaphore.h> /*  sem_t */
 
 unsigned long int count;
 sem_t sem;
