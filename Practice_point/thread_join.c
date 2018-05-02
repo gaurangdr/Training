@@ -16,6 +16,7 @@ void* thread_function(void *arg)
 {
 	char *a = malloc(10);
 	strcpy(a,"hello world\n");
+//	free(a);
 	pthread_exit((void*)a);
 }
 
@@ -24,11 +25,11 @@ int main(void)
 	pthread_t thread_id;
 	char *b;
 
-	pthread_create (&thread_id, NULL,&thread_function, NULL);
+	pthread_create (&thread_id, NULL, &thread_function, NULL);
 
 	/* reciving one pointer value so to use that we need double pointer */ 
-	pthread_join(thread_id,(void**)&b);
+	pthread_join(thread_id, (void**)&b);
 
-	printf("b is %s",b); 
+	printf("b is %s", b); 
 	free(b); 
 }

@@ -6,7 +6,7 @@ int main(void)
 		char b;
 		float c;
 	} un;
-	un.a = 49;
-	printf("%c\n", un.b);
+	un.a = 0xaabbccdd;
+	printf("%x\n", un.b);
 	return 0;
 }

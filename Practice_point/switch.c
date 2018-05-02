@@ -6,6 +6,9 @@ int main(void)
 	printf("Enter sel:");
 	scanf("%d", &sel);
 	switch (sel) {
+//	default:
+		printf("Good day\n");
+//		break;
 	case 1:
 		printf("Case 1\n");
 		int i = 10;

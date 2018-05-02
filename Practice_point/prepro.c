@@ -4,8 +4,8 @@
  */
 
 #include<stdio.h>
-#define IND PAK
 #define PAK 10
+#define IND PAK
 //#define int 30
 int main(void)
 {
