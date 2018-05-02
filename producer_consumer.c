@@ -4,7 +4,7 @@
 #include<semaphore.h>
 #include<stdlib.h>
 
-#define BUF_SIZE 2
+#define BUF_SIZE 5
 
 struct buffer {
 		int data;
