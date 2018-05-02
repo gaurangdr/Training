@@ -1,0 +1,49 @@
+1.Implementation of USB to I2S Bridge on NGX 1830 explorer 
+
+2. Real Time Temperature Controlling and Monitoring Using FreeRTOS and MATLAB
+	NGX 1768 explorer + mxBaseboard
+3.Dali Protocol/Bus Analyzer
+	Beagleboard-xM(GPIO,USB),AVR kit,Android 
+4.Industrial Automation system implemented on Beagle Board-XM and controlled by Android Device via Bluetooth
+	BeagleBoard-xM + Android
+5.Feedback Response System Using CAN in Automotive Applications
+	STM32 Discovery board + CAN transceiver + Beaglebone Black with CAN Cape
+6.Data transfer from BeagleBoard-xM to Android Mobile using Bluetooth
+	BeagleBoard-xM + Android
+7.Device Drivers for board peripherals and Real Time performance analysis on Cortex-M3
+	NGX 1768 explorer + mxBaseboard with FreeRTOS+CLI framework
+8.Line fault detection and prevention with environment monitoring
+	NGX 1768 explorer with FreeRTOS + mxBaseboard + Xbee hardware
+9.Implementation of Remote Terminal Unit(RTU) using RS485 protocol
+	NGX 1768 explorer + mxBaseboard + Rs232-RS485 adapters
+10.Implementation of SPI drivers and firmware
+	BeagleBoard-xM + ARM/AVR Kit
+11.Implementation of CAN and Dual CAN
+	LPC 1769 + EA Base board
+12.BLUETOOTH BASED MOUSE USING ANDROID PHONE FOR LINUX SYSTEM
+	Embedded linux + Android
+13.Implementation of USB Framework on STM32 F3/F4 board
+	Bulk,hid etc on STM32 F3 board + Linux drivers
+14.Monioring Embedded Linux through Android via USB 
+	Beagle Board-xM + Android using Android Open Accessory Protocol
+15.HOME AUTOMATION USING WI-FI BASED COMMUNICATION
+	CC3200 launchpad
+16.CAN Based Data Acquisition System
+	Nuvoton NuMicro Board
+17.Controlling BeagleBone using Android App via USB
+	Beagle Bone Black with TI Starterware + Android using Android Open Accessory Protocol
+18.Implementation of CANOpen on Cortex-m3 architecture
+	NGX 1768 explorer + mxBaseboard 
+19.Real time driver model for watchdog timer on OMAP Platform
+	BeagleBoard-xM + Xenomai
+20.Implementation of USB composite framework on Tiva Series Launch pad + + host drivers on linux
+	Tiva Series Launch pad + Linux Platform
+21.CAN Protocol based Data Acquisition
+	LPC 1769 + EA Base board
+22.Wireless(Zigbee)Remote monitoring Real-Time Data Using ARM
+	NGX 1343 blueboard + Xbee adapters
+23.Real Time Data Monitoring of Accelerometer
+	ST32 F3/F4 discoveryboard with Chibios + PC with Xenomai
+24.Implementation of CAN on LPC1769
+	
+25.Can Implementation over STM32F3

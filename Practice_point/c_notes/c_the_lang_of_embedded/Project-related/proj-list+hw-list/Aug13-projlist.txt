@@ -1,0 +1,45 @@
+1.CAN Device Driver on LPC1769 XpressoBoard using FreeRTOS+IO platform
+	LPC 1769 xpresso board with freertos+io framework
+2.Implementation of USB firmware + Drivers
+	NGX 1768 explorer + mxBaseboard
+3.Wireless Sensor Network based on ZigBee for Monitoring Applications
+	BeagleBone Black + Xbree Adapters
+4.Accelerometer Based USB-HID Mouse
+	LPC 2148/1343 blueboard + Accelerometer
+5.Implementation of PCI-DIOT driver
+
+6.RTDM based Device Driver For PCIe (Parallel Port) Card,Bitbanging SPI over parallel port
+	PCIe Parallel card + AVR kit
+7.Firmware Development for SD card access
+
+8.Multifunctional Custom USB Device Firmware for LPC11U24 - Cortex M0 with Linux USB Device Driver
+	LPC11U24 board + Linux
+9.Implementation of Watchdog timer support in FreeRTOS
+	NGX 1768 explorer + mxBaseboard
+10.Gesture controlled Rover using Android and custom GPIO driver
+	Beagleboard-xM with Bluez + Android
+11.IMPLEMENTING COMPOSITE GADGET DEVICE DRIVER
+	Beagleboard-xM
+12.Data Acquisition System using USB Device Driver
+	LPC1769 xpresso board
+13.Wi-Fi Based Remote Monitoring System
+	Stellaris® LM4F232 Evaluation Board +RN171( Serial-Wifi adapter) + LM75
+14.Developing RTDM based Driver for ADC Interfacing on Beagle Bone
+	BeagleBone black
+15.Implementation of Peripheral framework using FreeRTOS + I/O
+	NGX 1830 explorer
+16.Implementation CAN + Ethernet gateway
+	SocketCAN on embedded linux
+17.Remote Monitoring and Control through Bluetooth using FreeRTOS
+	Freescale FRDm KL25z + RN41-EK module(Serial-Bluetooth)
+18.Implementation of INDI Protocol in Embedded Linux
+	BeagleBoard-xM
+19.Fan Regulator using hand gesture using PandaBoard-ES
+
+20.Audio Acquisition and Storage with I2S
+	NGX 1830 explorer
+21.FreeRTOS DRIVER DEVELOPMENT FOR LPC1114 USING THE FreeRTOS+IO FRAMEWORK
+
+22.CAN based Data Acquisition System
+	LPC 1769 + LPC 2148 
+

@@ -1,0 +1,55 @@
+1.Implementation of IoT using Wireless Sensor Network
+	Using CC3200 launchpad and Raspberry Pi and MQTT protocol
+2.CAN Bus Implementation
+	Using STM32 F3 and BeagleBoneBlack
+3.Writing Block Driver And Implementing File System On PCIe Device SRAM
+
+4.Implementation of Minimal Copy Driver for Sensor Networks
+	Based on kernel space networking(TCP) APIs, POC with UART, USB peripherals
+5.Communication between Android device and Linux ported ARM board
+	using Bluetooth/LE communication b'n BeagleBoard-xM and Android
+6. Real Time Monitoring of Sensors based on FreeRTOS
+	using STM32 F3 and FreeRTOS
+7.Implementation of RTDM(Xenomai) based SPI driver
+	Using BeagleBoard-XM and AVR
+8.Implementation of CANOpen Protocol Stack 
+	Using BeagleBoard-XM and PC via UART
+9.USB Firmware and Driver for USB Lamp/USB Fan
+	Using STM32 F3 and PC
+10.Serving up Time with an RTC and NTP
+	Using RaspberryPi and RTC module
+11.Implementation of EtherCAT Protocol for Data Acquisition
+	Using BeagleBoard-XM/BBB and PC 
+12.Gprs Based Home Automation
+	Using NGX 1343 Blueboard and GPRS Modem
+13.Implementation_of_vehicle_automation_system_using_can
+	Using LPC1769 Xpresso Board 
+14.Serial Communication through RTDM Driver and FreeRTOS+IO Driver and Benchmarking
+	Using NGX 1768 Xplorer on mxBaseBoard + PC(Xenomai)
+15.Implementation of Infrared Device Driver
+	Using Rpi and IR sensors
+16.Bridging between USB sub system and TCP/IP networking
+	Using BB-xM
+17.Android Mobile communicating with Microcontroller
+	Based Bluetooth communication b'n Android and MCU
+18.Embedded Web Client on ARM Cortex M3 based on lwip architecture.
+	Using LPC1769 Xpresso Board / NGX 1768 explorer	
+19.Controlling Development Board through Android Open Accessory Protocol
+	Controlling CAN,UART on embedded linux(BB-xM)
+20.Implementation of Data Acquisition System
+	Using STM32 F3(ChibiOS) and PC(Xenomai), Graph plotting thru Qt
+21.Remote Monitoring and Logging of Sensor Data
+	using Rpi and SPI-ADC(MCP3x08),plotting thru Qt 
+22.Implementation of PI-Bot for surveillance system
+
+23.E-compass using STM32F3 Discovery board
+	USB Communication(HID/CDC) b'n STM32F3 and PC, plotting thru Qt
+24.Prototype Implementation of RTnet in distributed control systems
+	Using NGX 1343, PC and RS232-RS485 converts
+25.Implementation of MQTT-SN protocol for Wireless Sensor Networks
+	Using PC and MCU via UART
+26.Home automation using Raspberry Pi-2
+
+27.Bitbanging Serial Port over PCIe-Parallel Port
+
+

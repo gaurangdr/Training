@@ -1,0 +1,44 @@
+1.Microprocessor Based - Suitable for Embedded Linux or Xenomai(RTOS) porting
+	Beagle Board xM Rev C
+	Panda Board ES
+	Raspberry Pi Model B,B+
+	Friendly ARM
+	Beagle Bone Black				- supports linux as well as TI Starterware
+2.MCU based - suitable for CMSIS based firmware or FreeRTOS porting
+	LPC1343 Blueboard from NGX					- supports ngx sample code
+	LPC1768 explorer+mxBase board from NGX				- supports ngx sample code
+	LPC1769 Xpresso board + EA Base board from Embedded Artists	- supports lpcopen,nxpUSBLib,ngx sample code
+									  freertos
+	NGX 1830 explorer						- supports lpcopen,nxpUSBLib,,ngx sample code
+	STM32 F3 Discovery Board					- supports freertos,chibios,stm cube
+3.Networking/Wireless Domain
+	Microchip MiWi hardware(PIC18,PIC32 based)
+	Microchip ZENA Adapter
+	CC3200 launchpad from Texas Instruments 
+	Xbee modules , adapters
+	CAN Cape for Beagle Bone
+	SPI-CAN adapter based on mcp251x (?)
+	Wireless Router,WLAN adapters
+	SPI-Ethernet adapter
+4.Expansion card - suitable for linux based or real time drivers
+	PCIExpress Serial cards
+	PCIExpress Parallel cards
+	PCIe multi functional(parallel+serial) cards
+	PCI-LAN cards
+4.Miscellenious
+	GSM/GPRS Modem with USB/UART interface
+	GPS Modem with USB/UART interface
+	TrainerBoard-xM for BeagleBoard/PandaBoard(GPIO Expansion board)
+	Analog,Digital Accelerometers
+	IR sensors
+	USB-UART/TTL converters-FTDI based,PL2303 based
+	FT2232x based hardware-JTAG,MPSSE support
+	RS232-RS485 converters
+	USB Web Cams
+	SPI-ADC converters
+	NI USB Data Acquisition Card Model USB 6009
+
+
+	
+
+

@@ -1,8 +1,8 @@
-//#define _OPEN_THREADS                                                           
 #include <stdio.h>                                                              
 #include <pthread.h>                                                            
-                                                                                
-int main()                                                                      
+#include<stdlib.h>                                                                                
+
+int main(void)                                                                      
 {                                                                               
    pthread_attr_t attr;                                                         
    size_t size;                                                                 

@@ -1,0 +1,46 @@
+1.Peripheral Driver for LPC1830 using The FreeRTOS+IO Framework and CMSIS Library
+	LPC1830 explorer from NGX
+2.Xenomai(RTDM) based ADC driver for BeagleBone
+
+3.Realtime Driver for PCIe-Serial card using RTDM model.
+
+4.Xenomai based Real time Driver for PCI DAS card And PCI DIOT card
+
+5.USB Gadget and Host Driver
+	BeagleBoard-Xm, TrainerBoard
+
+6.Embadded Web Server For Internet of Things.
+	PIC,AVR MCUs + Zigbee Hardware
+7.WATCHDOG DRIVER IN XENOMAI using BeagleBoard-xM
+
+8.ZIGBEE BASED CHAT APPLICATION
+
+9.Benchmarking and Comparison of Embedded Linux and Embedded Xenomai Real Time Operating System on Beagle Board XM and Trainer XM Kit 
+
+10.CAN protocol implementation using SPI-CAN interface on LPC2148(ARM7TDMI).
+
+11.WIRELESS (BLUETOOTH) IMPLEMENTATION OF PS/2 KEYBOARD USING SERIAL TO BLUETOOTH MODULE
+
+12.Customize CAN driver for LPC1768 board in FreeRTOS using cmsis library
+
+13.Custom USB Driver and Firmware for Cortex-M0(LPC11U24 blueboard)
+
+14.Custom USB Device Driver & Firmware for LPC11U14 with EA Based board
+
+15.Generic Packet Generator and Intrusion Detection System
+
+16.Linux Device Driver for PCI (ESA-DAS) Card
+
+17.Custom Driver for LPC1768 explorer in Keil RTX
+
+18.USB Device Driver for Custom USB device - LPC1769 dev board + EA Baseboard
+
+19.CMSIS based custom driver(PS/2 Keyboard) for LPC1114 in Keil RTX
+
+20.WatchDogTimer driver for FreeRTOS 
+	LPC1768 explorer with mxBase board
+21.Image capturing with Raspberry Pi
+	USB Camera + GPIO Switch
+22.CAN Bus Implementation & Data Acquisition on ATmega128 
+	AVR Uni Board, SPI-CAN adapters.
+

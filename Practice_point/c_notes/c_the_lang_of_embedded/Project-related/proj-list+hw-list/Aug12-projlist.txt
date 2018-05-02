@@ -1,0 +1,56 @@
+1.Embedded Wireless Data Transfer System
+   	BlueTooth Hardware & Beagle Board
+2.ZIGBEE BASED DATA COMMUNICATION SYSTEM 
+	LPC2148, BeagleBoard,Zigbee Hardware
+3.DYNAMIC RECONFIGURABLE TOUCH SCREEN KEYBOARD
+	Firmware for Friendly ARM
+4.Turning Raspberry PI into FM Transmitter
+	RaspberryPi,Simple FM Hardware
+5.PCI Express based Serial Card Driver Development on Xenomai
+	PCIe-Serial Card with xenomai
+6.Watchdog Timer Driver for LPC1114 on FreeRTOS
+	LPC1114 stamp with mbed Baseboard
+7.EMBEDDED WEB SERVER FOR BIOMEDIACL DATA ACQUISITION
+	PIC18 family Micro controller , Simple LEDs, Sensors
+8.DESIGN AND DEVELOPMENT FOR PROTOTYPE OF REMOTE TERMINAL UNIT
+	EmxDev boards, RS232 to RS485 converterts, LPC2148
+9.Implementation of Digital Driving System for a Car Using CAN Protocol
+	LPC 2129 kit(MCP2551) + Suitable sensors
+10.Acceleromter Based Wireless Mouse
+	AVR Kit, Accelerometer, Zigbee/Bluetooth 
+11.Development of RT Driver and System/Task Monitoring Application
+	BeagleBoard,BeaconBoard,Xenomai
+12.Linux USB Driver for ARM Kit based devices
+	LPC 2148 & USB Driver for linux
+13.CAN PROTOCOL IMPLEMENTATION
+	LPC 2129 kit, Simple Sensors(Temp,ultrasonic)
+14.J2ME Porting on OMAP based boards
+	BeagleBoard,CLDC&MIDP sources
+15.Real_Time_Watchdog_Driver
+	PandaBoard, Driver for Linux
+16.IMPLEMENTING SECURED USB MASS STORAGE GADGET
+	Beagle Board, USB(Storage) Driver for Linux
+17.DEVELOPING PERIPHERAL DRIVERS & BSP FOR FreeRTOS 
+	LPC1343 BlueBoard , Linux Driver
+18.Kernel space to user space communication using Netlink sockets
+	BeagleBoard
+19.multifunction usb device emulation using arm7 with linux devicedrivers
+	LPC2148, Linux USB Driver
+20.FreeRTOS Based Device Driver using LPCXpresso
+	LPC1343, USB Driver for linux
+21.CAN Implementation for Automotive Application 
+	LPC 2129 kit,Shock(801S,Temperature Sensors
+22.PCI-DIOT_driver_development_on_xenomai_and_benchmarking
+	PCI DIOT Cards & Xenomai
+23.USB Locking System using LPC1343
+	LPC1343 & Driver for Linux 
+24.Intrusion Detection System with libpcap library
+	RTNet Implementation
+25.Xenomai_Device_Driver for PCI(ESA-DAS)_Card
+	PCI-DAS card,Analog & Digital Accelerometers,Xenomai
+26.Porting Media Player with LIRC support
+	BeagleBoard, LIRC supported IRDA hardware
+
+
+
+

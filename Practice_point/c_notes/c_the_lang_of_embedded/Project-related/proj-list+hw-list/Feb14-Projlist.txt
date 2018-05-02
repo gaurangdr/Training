@@ -1,0 +1,25 @@
+1.Realtme implementation of GPIO drivers using BeagleBoard-xM+TrainerBoard-xM
+2.Benchmarking DSP applications on Beagle Board Xm (TI DSP Bridge)
+3.Wireless Sensor Network based on MiWi Protocol 
+4.Linux USB Host driver for Microchip ZENA adapter for MiWi packet sniffing
+5.Manchester code processing using beagle bone black
+6.Positioning Through GPS & mapping its data on a UI using ARM Platform
+7.Portable Camera using RaspberryPi
+8.Using ARMY+ Zigbee- accelerometer controlled motors (.Car)
+9.Client server based hardware sharing on network
+10.Linux USB Driver for USB Lamp
+11.Zigbee communication based  on LPC 1769
+12.Sensing temperature with Raspberry Pi + GPIO switch
+13.CAN BUS implementation over GPOS-SocketCAN
+14.Measuring & Controlling temperature using beaglebone Black
+15.Universal Reader for IR remote
+16.Device Control using Bluetooth
+17.Device Control using WiFi
+18.Xenomai Based Real time implementation of RS485 network
+19.USB HID communication using LPC1343
+20.USB Firmware & Driver development for beagle bone black using TI Starterware
+21.FreeRTOS implementation on OMAP Based SOCs
+22.SPI Driver for ADC Data collection
+23.Multifunctional USB firmware on LPC1769+EA Base board with linux host driver
+24.FreeRTOS driver for DCAN interface on BeagleBone
+
