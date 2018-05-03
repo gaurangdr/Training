@@ -2,9 +2,9 @@
 #include<stdint.h>
 //#include<stdlib.h>
 //#include<string.h>
-int main()
+int main(void)
 {
-	int i=5;
+	int i = 5;
 	short s;
 	long l;
 	long long ll;

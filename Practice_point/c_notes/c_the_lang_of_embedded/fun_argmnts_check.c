@@ -1,4 +1,5 @@
 #include<stdio.h>
+int sum (int, int);
 int main()
 {
 	int a;
@@ -8,6 +9,6 @@ int main()
 }
 sum(int a,int b, int c)
 {
-	c=2;
+	c = 2;
 	return a+b+c;
 }

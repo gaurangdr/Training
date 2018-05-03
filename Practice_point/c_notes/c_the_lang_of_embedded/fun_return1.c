@@ -8,7 +8,9 @@ int main()
 }
 int fun()
 {
+	int a = 10;
 	printf("Work is worship\n");
-	printf("Ind");	
+	printf("Ind");
+	printf("Abcde");
 //	return 0;
 }

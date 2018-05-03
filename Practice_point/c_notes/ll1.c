@@ -1,17 +1,21 @@
 #include<stdio.h>
 #include<stdlib.h>
+
 struct node
 {
 	int data;
 	struct node *next;
 };
+
 typedef struct node node;
+
 node *ins_beg(node*,int);
 node* ins_end(node*,int);
 void disp(node*);
 node *rev(node* ptr);
 void dis_rec(node*);
-int main()
+
+int main(void)
 {
 	node *start=NULL;
 	int select,data;

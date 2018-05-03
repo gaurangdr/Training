@@ -9,5 +9,5 @@ next:	fun();
 }
 void fun()
 {
-next: printf("good evening\n");
+next1: printf("good evening\n");
 }

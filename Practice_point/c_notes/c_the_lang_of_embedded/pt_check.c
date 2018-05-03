@@ -3,6 +3,6 @@ int main()
 {
     int a = 10;
     void *ptr = &a;
-    printf("%d\n",*ptr);
+    printf("%d\n", *ptr);
     return 0;
 }

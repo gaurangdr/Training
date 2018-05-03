@@ -33,6 +33,6 @@ int main()
 	printf("size of short     :%d\n",sizeof(s));
 	printf("size of long      :%d\n",sizeof(l));
 	printf("size of long long :%d\n",sizeof(ll));
-	printf("size of int_t     :%d\n",sizeof(x));
+	printf("size of int8_t     :%d\n",sizeof(x));
 	return 0;
 }
