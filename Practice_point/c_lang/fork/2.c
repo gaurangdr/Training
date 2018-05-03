@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<unistd.h>
-#include<sys/types.h>
+//#include<sys/types.h>
 #include<sys/wait.h>
 int main()
 {
@@ -8,12 +8,13 @@ int main()
 	pid1=fork();
 	if (pid1)
 	{
-		wait();
+		wait(NULL);
+		sleep(2);
 		pid2=fork();
 		printf("parent fork a second child\n");
 		if(pid2)
 		{
-			wait();
+			wait(NULL);
 			printf("parent after second child\n");
 		}
 		else

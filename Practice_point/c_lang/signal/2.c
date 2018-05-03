@@ -12,7 +12,7 @@ int main()
 	{
 		sleep(5);
 		sched_yield();
-		kill(getpid(),SIGSTOP);
+		kill(getpid(),SIGINT);
 	}
 	return 0;
 }

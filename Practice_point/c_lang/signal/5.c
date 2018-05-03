@@ -10,11 +10,14 @@ void dis(int sig)
 int main()
 {
 	sigset_t s1,s2;
-	char buf[100];
 	struct sigaction act1;
+
+	char buf[100];
 	int ret;
+
 	sigemptyset(&s1);
 	sigaddset(&s1,SIGINT);
+
 	act1.sa_handler=dis;
 	sigfillset(&act1.sa_mask);
 	act1.sa_flags=0;

@@ -25,11 +25,13 @@ int main(int argc,  char *argv[])
 		fprintf(stderr, "SIGINT signal blocked\n");
 		sleep(5);
 
+/* enter SIGINT here, that will appy immediate after unblock */
+
 		printf("Leaving Blocking State & Entering UNBLOCK state\n");
 		if (sigprocmask(SIG_UNBLOCK, &intmask, NULL) == -1)
 			break;
 		fprintf(stderr, "SIGINT signal unblocked\n");
-		sleep(2);
+		sleep(10);
 	}
 	perror("Failed to change signal mask");
 	return 1;

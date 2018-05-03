@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define NU 0L
+#define NU 0l
 int main()
 {
 	int a;

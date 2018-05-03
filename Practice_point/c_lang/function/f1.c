@@ -9,7 +9,7 @@ int main()
 	printf("sum : %f\n",add(11,22,33));
 	return 0;
 }
- add(int a, int b, int c)
+  add(int a, int b, int c)
 {
 	double sum;
 	sum=a+b+c;
