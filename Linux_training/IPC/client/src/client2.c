@@ -1,19 +1,19 @@
 /*
  * @file  : client.c
  * @Aim   : client programe that open a file, send 1024 byte chunks of it to 
- *	    server for lowercase to uppercase conversion and store it to new
- *	    created file
+ *		    server for lowercase to uppercase conversion and store it to new
+ *		    created file
  * @Author: Gaurang
  * @Date  : 27 Oct 2017
  */
 
 #include<stdio.h>
 #include<stdlib.h>
-#include<errno.h>
+//#include<errno.h>
 #include<sys/types.h>
 #include<sys/socket.h>
 #include<netinet/in.h>
-#include<fcntl.h>
+//#include<fcntl.h>
 #include<string.h>
 #include<unistd.h>
 #include<arpa/inet.h>
@@ -60,20 +60,21 @@ int main(int argc, char *argv[])
 	dest_addr.sin_port = htons(DESTPORT);
 	dest_addr.sin_addr.s_addr = inet_addr(serverIpAddr);
 
-	/* connect is non blocking api */
-	if (connect(sockfd, (struct sockaddr *) &dest_addr,
-	    sizeof(struct sockaddr))) {
+	/* connect is non blocking api; server program must be running othervise connect api give error */
+	if (connect(sockfd, (struct sockaddr *) &dest_addr, sizeof(struct sockaddr))) {
 		close(sockfd);
 		handleError("Connection error:");
 	}
-
+	printf("Connect\n");
 	/* communication and file reading */
 	char buf[MSGSIZE + 1];
 	int len, c, i;
 	time_t start, end;
 
 	memset(buf, 0, sizeof(buf)); /* clear buffer */
+	printf("Before recv\n");
 	len = recv(sockfd, buf, MSGSIZE, 0);
+	printf("After recv\n");
 	if ( len == -1) { /* msg from server */
 		close(sockfd);
 		handleError("Message receive fail error:");

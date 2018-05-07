@@ -1,9 +1,18 @@
 /*
  *	@file	: server.c
  *	@Aim	: Server program that accept connection from clients and do
- *		  lowercase to uppercase conversion of received data from client
+ *			  lowercase to uppercase conversion of received data from client
  *	@Author	: Gaurang
  *	@Date	: 26 Oct 2017
+*/
+
+/* MAN PAGE: man 7 socket
+
+socket(2)  creates a socket, connect(2) connects a socket to a remote socket address, the bind(2) function binds a socket to a local
+socket address, listen(2) tells the socket that new connections shall be accepted, and accept(2) is used to get a new socket with  a
+new  incoming  connection.   socketpair(2)  returns  two connected anonymous sockets (implemented only for a few local families like
+AF_UNIX)
+
 */
 
 #include<stdio.h>
@@ -26,7 +35,6 @@ isn't accept()ing connections as soon as they come in. */
 #define handle_error(msg) do { perror(msg); exit(EXIT_FAILURE); } while (0)
 
 int count;
-
 pthread_attr_t pattr;  /* to thread attributes */
 
 int valid_number(char *s, uint32_t *data);
@@ -39,7 +47,7 @@ int main(int argc, char *argv[])
 {
 	char ip_add[16];
 	unsigned int portNo;
-	int socketfd, clientfd;
+	int socketfd, *clientfd;
 	/* argument check */
 	if (argument_val(argc, argv, &portNo))
 		exit(EXIT_FAILURE);
@@ -88,33 +96,37 @@ int main(int argc, char *argv[])
 	while (1) {
 		while (count == CLIENT_NUMBER) /*waiting for the client close*/
 			;
-		clientfd = accept(socketfd, (struct sockaddr *) &client_addr,
+
+		clientfd = (int *) malloc(sizeof(int));
+
+		*clientfd = accept(socketfd, (struct sockaddr *) &client_addr,
 					&size);
-		if (clientfd == -1) {
+		if (*clientfd == -1) {
 			close(socketfd);
 			handle_error("Accept fail error:");
 		}
 
-		pthread_t thread;
-		int *pclientfd = (int *) malloc(sizeof(int *));
+//		pthread_t thread;
+		long unsigned int thread;
 
-		*pclientfd = clientfd;
+		printf("thread add: %p\n", &thread);
 
-		printf("Client %d is connected\n", clientfd);
+		printf("Client %d is connected\n", *clientfd);
 
 		pthread_create(&thread, &pattr, connection_handler,
-					(void *) pclientfd);
-		count++;
+					(void *) clientfd);
+		count++; // should use mutex lock on count variable
+
 	}
 	if (close(socketfd) == -1)
 		handle_error("Server socket close error");
 	printf("Server is closed\n");
-	return 0;
+	pthread_exit(NULL);
 }
 
 /*/////////////////////////////////////////////////////////////////////////////
 ///@brief:	received packets, do lowercase to upercase operationd and again
-///		send packets to client
+///			send packets to client
 ///@param :	void *ptr: pointer to argument data(client socket descreptor)
 ///@return:	void
 /////////////////////////////////////////////////////////////////////////////*/
@@ -124,13 +136,16 @@ void *connection_handler(void *ptr)
 	int clientfd = *(int *) ptr;
 	free(ptr); 			/* free the heap memory */
 	char buf[MSGSIZE] = "Hello from server\n";
+    printf("Hi I'm thread ID=%lu\n", (int unsigned long)pthread_self());
 	len = strlen(buf);
 	if (send(clientfd, buf, len, 0) == -1) {
-		count--;
+		count--; // use mutex lock
 		close(clientfd);
 		fprintf(stderr, "Messeage send fail error\n");
 		pthread_exit(NULL);
 	}
+	
+
 	while (1) {
 		len = recv(clientfd, buf, MSGSIZE, 0);
 		if (len == -1) {
@@ -171,7 +186,7 @@ int argument_val(int argc, char *argv[], unsigned int *port)
 		printf("To run the program follow below format\n");
 		printf("./server.out <server_IP_addr> <port_number>\n");
 		fprintf(stderr,
-		"Error: too few command line argumennts to run he program\n");
+		"Error: too few command line argumennts to run the program\n");
 		return -1;
 	}
 	if (valid_number(argv[2], port)) { /* number or not */
@@ -186,11 +201,11 @@ int argument_val(int argc, char *argv[], unsigned int *port)
 }
 
 /*/////////////////////////////////////////////////////////////////////////////
-///@brief:	check given string is numeric or not
-///@param :	char *s: string to check
-///		uint32_t *data: if string numeric then converted number is
-///		stored into data
-///@return:	int: 0 on success othervise -1
+///@brief	:	check given string is numeric or not
+///@param	:	char *s: string to check
+///				uint32_t *data: if string numeric then converted number is
+///				stored into data
+///@return	:	int: 0 on success othervise -1
 /////////////////////////////////////////////////////////////////////////////*/
 int valid_number(char *s, uint32_t *data)
 {
@@ -204,9 +219,9 @@ int valid_number(char *s, uint32_t *data)
 }
 
 /*/////////////////////////////////////////////////////////////////////////////
-///@brief:	Convert lowercase to upeercase letter
+///@brief : Convert lowercase to upeercase letter
 ///@param :	char *s: string to convert
-///		int str_len: string length
+///			int str_len: string length
 ///@return:	void
 /////////////////////////////////////////////////////////////////////////////*/
 void uppercase(char *buf, int str_len)
