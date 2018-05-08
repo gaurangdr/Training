@@ -1,0 +1,23 @@
+IPC
+
+1. Pipes //anonymous communications channel
+2. FIFO // same as pipe but have name
+3. System V and Posix IPC
+	1. shared memory (mmapm and shared memory)
+	2. message queue
+	3. semaphore
+4. Socket
+5. Signal
+
+#######
+A pipe is a mechanism for interprocess communication; data written to the pipe by one process can be read by another process. The data is handled in a first-in, first-out (FIFO) order. The pipe has no name; it is created for one use and both ends must be inherited from the single process which created the pipe.
+
+
+1. Shared memory (system V)
+
+	key_t ftok(char* "File Path", int num)
+	int shmget(key_t, mem_size, permissions); //allocate mem and return shared memory id
+	void * shmat(shmid, NULL, NULL); // return memory address
+
+	shmdt(pointer)
+	

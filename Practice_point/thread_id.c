@@ -11,13 +11,17 @@ void* message(void* var){
 }
 
 int main(void){
-    pthread_t threads[10];
+//  pthread_t threads[10];
+	pthread_t t;
     int report[10];
     for(int i=0;i<10;i++){
-        report[i] = pthread_create(&threads[i],NULL,message,(void*)i);
+//      report[i] = pthread_create(&threads[i],NULL,message,(void*)i);
+	    report[i] = pthread_create(&t,NULL,message,(void*)i);
+		printf("thread %lu, %p\n", t, &t);
     }
-    for(int i=0;i<10;i++){
-        pthread_join(threads[i],NULL);
-    }
+//	for(int i=0;i<10;i++){
+		sleep(2);
+        pthread_join(t,NULL);
+ //   }
     return 0;
 }
