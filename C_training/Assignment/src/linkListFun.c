@@ -1,19 +1,20 @@
 /*
-Aim	:Link list functions
-Author	:Gaurang
-Date	:10 Oct 2017
-*/
-#include<stdio.h>
-#include<stdlib.h>
-#include<stdint.h>
-#include"../include/linkList.h"
+ *	Aim		:	Link list functions
+ *	Author	:	Gaurang
+ *	Date	:	10 Oct 2017
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include "../include/linkList.h"
 
 /*/////////////////////////////////////////////////////////////////////////////
-///@brief	:create_node at top position in list
-///@param	:**ptr:pointer to struct pointer which points to first node
-///		of list
-///		data:data value of creating node
-///@return	:returns 0 if no error else returns error code
+///@brief	:	create_node at top position in list
+///@param	:	**ptr : pointer to struct pointer which points to first node
+///				of list
+///				data : data value of creating node
+///@return	:	returns 0 if no error else returns error code
 /////////////////////////////////////////////////////////////////////////////*/
 int insertNodeAtTop(node **ptr, uint32 data)
 {
