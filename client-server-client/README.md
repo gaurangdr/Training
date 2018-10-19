@@ -34,14 +34,6 @@ A TCP client-server application flow.
 3. Implent the method how receiver inform the client for missing message
 4. Instead of port number used to select receiver use user name of receiver which is simple.
 
-## Compilation
-
-Server proram:
-$gcc server.c -lpthread -o server.out -Wall
-
-Client program:
-$gcc client.c -o client.out -Wall
-
 ## output snap
 
 Client 1 (sender):
